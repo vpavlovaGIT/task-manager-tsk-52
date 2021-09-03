@@ -6,7 +6,7 @@
 
     <groupId>ru.vpavlova.tm</groupId>
     <artifactId>task-manager-logger</artifactId>
-    <version>1.0.51</version>
+    <version>1.0.52</version>
 
     <name>Task Manager Logger</name>
     <url>https://gitlab.com/vpavlova</url>

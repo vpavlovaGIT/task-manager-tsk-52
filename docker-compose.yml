@@ -28,13 +28,13 @@ services:
       PMA_PASSWORD: root
 
   balancer:
-    image: registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-balancer:latest
+    image: registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-balancer:latest
     hostname: server
     ports:
       - 8080:80
 
   tm-server-alpha:
-    image: registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-server:latest
+    image: registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-server:latest
     hostname: alpha
     ports:
       - 8081:8080
@@ -50,7 +50,7 @@ services:
       - default
 
   tm-server-betta:
-    image: registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-server:latest
+    image: registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-server:latest
     hostname: betta
     ports:
       - 8082:8080
@@ -66,7 +66,7 @@ services:
       - default
 
   tm-server-gamma:
-    image: registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-server:latest
+    image: registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-server:latest
     hostname: gamma
     ports:
       - 8083:8080
