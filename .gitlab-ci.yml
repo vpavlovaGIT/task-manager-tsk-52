@@ -38,7 +38,7 @@ publish-tm-server:
   script:
     - docker build -f ./tm-server/Dockerfile -t registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-server:latest .
     - docker login -u vpavlova -p bPocf8udetLAjHzrFEDi registry.gitlab.com
-    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-server:latest
+    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-server:latest
   dependencies:
     - tm-server
 
@@ -48,7 +48,7 @@ publish-tm-logger:
   script:
     - docker build -f ./tm-logger/Dockerfile -t registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-logger:latest .
     - docker login -u vpavlova -p bPocf8udetLAjHzrFEDi registry.gitlab.com
-    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-logger:latest
+    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-logger:latest
   dependencies:
     - tm-logger
 
@@ -58,7 +58,7 @@ publish-tm-client:
   script:
     - docker build -f ./tm-client/Dockerfile -t registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-client:latest .
     - docker login -u vpavlova -p bPocf8udetLAjHzrFEDi registry.gitlab.com
-    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-client:latest
+    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-client:latest
   dependencies:
     - tm-client
 
@@ -68,7 +68,7 @@ publish-tm-balancer:
   script:
     - docker build -f ./tm-balancer/Dockerfile -t registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-balancer:latest .
     - docker login -u vpavlova -p bPocf8udetLAjHzrFEDi registry.gitlab.com
-    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-51/tm-balancer:latest
+    - docker push registry.gitlab.com/vpavlova/task-manager-tsk-52/tm-balancer:latest
   only:
     - master
 
